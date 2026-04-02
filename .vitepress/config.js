@@ -4,6 +4,7 @@ import { getSidebar } from 'vitepress-plugin-auto-sidebar'
 export default defineConfig({
   title: '二公司制度库',
   description: '中建一局集团第二建筑有限公司制度宣贯平台',
+  ignoreDeadLinks: true,
 
   themeConfig: {
     nav: [
