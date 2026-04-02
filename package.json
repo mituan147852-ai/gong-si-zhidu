@@ -1,0 +1,15 @@
+{
+  "name": "er-gong-si-zhi-du-ku",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "二公司制度宣贯平台",
+  "scripts": {
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:preview": "vitepress preview ."
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vitepress-plugin-auto-sidebar": "^1.4.0"
+  }
+}
