@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import { getSidebar } from 'vitepress-plugin-auto-sidebar'
 
 export default defineConfig({
   title: '二公司制度库',
@@ -14,17 +13,75 @@ export default defineConfig({
       { text: '项目管理部制度', link: '/project/' }
     ],
 
-    sidebar: getSidebar({
-      contentRoot: '/',
-      contentDirs: [
-        { path: 'finance', title: '财务资金制度' },
-        { path: 'business', title: '商务制度' },
-        { path: 'project', title: '项目管理部制度' }
+    sidebar: {
+      '/finance/': [
+        {
+          text: '财务资金制度',
+          collapsed: false,
+          items: [
+            { text: '催收防欠管理办法', link: '/finance/01-催收防欠管理办法' },
+            { text: '生产资金收支管理', link: '/finance/02-生产资金收支管理' },
+            { text: '费用管理办法', link: '/finance/03-费用管理办法' },
+            { text: '抵债资产管理', link: '/finance/04-抵债资产管理' },
+            { text: '财务管理分册', link: '/finance/05-财务管理分册' },
+            { text: '资金管理分册', link: '/finance/06-资金管理分册' },
+            { text: '固定资产无形资产', link: '/finance/07-固定资产无形资产' },
+            { text: '境外财务资金管理', link: '/finance/08-境外财务资金管理' }
+          ]
+        }
       ],
-      collapsible: true,
-      collapsed: false,
-      useFrontmatter: true
-    }),
+      '/business/': [
+        {
+          text: '商务制度',
+          collapsed: false,
+          items: [
+            { text: '分供方资源管理办法', link: '/business/1-分供方资源管理办法' },
+            { text: '竣工考核管理办法', link: '/business/2-竣工考核管理办法' },
+            { text: '亏损及未达预收益项目责任追究', link: '/business/3-亏损及未达预收益项目责任追究办法' },
+            { text: '目标责任制管理办法', link: '/business/4-目标责任制管理办法' },
+            { text: '商务管理规定', link: '/business/5-商务管理规定' },
+            { text: '商务投标管理办法', link: '/business/6-商务投标管理办法' },
+            { text: '工程承包合同管理办法', link: '/business/7-工程承包合同管理办法' },
+            { text: '成本管理办法', link: '/business/8-成本管理办法' },
+            { text: '商务风险监控管理办法', link: '/business/9-商务风险监控管理办法' },
+            { text: '竣工结算管理办法', link: '/business/10-竣工结算管理办法' },
+            { text: '目标责任考核兑现', link: '/business/目标责任考核兑现' },
+            { text: '保证金预留管理', link: '/business/保证金预留管理' },
+            { text: '采购业务组实施', link: '/business/采购业务组实施' },
+            { text: '商务资料管理', link: '/business/商务资料管理' },
+            { text: '算量中心实施', link: '/business/算量中心实施' }
+          ]
+        }
+      ],
+      '/project/': [
+        {
+          text: '项目管理部制度',
+          collapsed: false,
+          items: [
+            { text: '项目实施管理办法', link: '/project/项目实施管理办法' },
+            { text: '项目工期考核奖励办法', link: '/project/项目工期考核奖励办法' },
+            { text: '劳务管理和分包资源管理办法', link: '/project/劳务管理和分包资源管理办法' },
+            { text: '环境管理办法', link: '/project/环境管理办法' },
+            { text: '项目履约品质综合评价', link: '/project/项目履约品质综合评价管理办法' },
+            { text: '项目部年度考核管理办法', link: '/project/项目部年度考核管理办法' },
+            { text: '施工现场机械设备管理办法', link: '/project/施工现场机械设备管理办法（试行）' },
+            { text: '项目前期手续办理', link: '/project/项目前期手续办理' },
+            { text: '项目前期手续办理细则', link: '/project/项目前期手续办理细则' },
+            { text: '竣工工程维修保修', link: '/project/竣工工程维修保修' },
+            { text: '竣工工程维修保修细则', link: '/project/竣工工程维修保修及保修金回收管理实施细则' },
+            { text: '建造师资质管理', link: '/project/建造师资质管理' },
+            { text: '建造师资质管理细则', link: '/project/建造师资质管理细则' },
+            { text: '观摩考察样板工地', link: '/project/观摩考察样板工地' },
+            { text: '观摩考察样板工地细则', link: '/project/观摩考察样板工地管理实施细则' },
+            { text: '首次资源配置', link: '/project/首次资源配置' },
+            { text: '首次资源配置细则', link: '/project/首次资源配置实施细则' },
+            { text: '临时设施管理', link: '/project/临时设施管理实施细则' },
+            { text: '精益建造管理', link: '/project/精益建造管理实施细则' },
+            { text: '项目工期管理', link: '/project/项目工期管理实施细则' }
+          ]
+        }
+      ]
+    },
 
     search: {
       provider: 'local'
