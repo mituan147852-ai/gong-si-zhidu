@@ -1,0 +1,18 @@
+/* 首页大图撑满右边 */
+.VPHome .VPHero .container {
+  max-width: 100% !important;
+}
+
+.VPHome .VPHero .image-container {
+  width: 100% !important;
+  max-width: 900px !important;
+  padding: 0 !important;
+}
+
+.VPHome .VPHero .image-container img {
+  width: 100% !important;
+  max-width: 900px !important;
+  height: auto !important;
+  object-fit: cover !important;
+  border-radius: 12px !important;
+}
