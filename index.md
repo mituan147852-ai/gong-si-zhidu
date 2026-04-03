@@ -6,8 +6,8 @@ hero:
   text: "中建一局集团第二建筑有限公司"
   tagline: "制度宣贯 · 怎么做 · 做什么 · 什么时候做 · 怎么考核"
   image:
-    src: /logo.png
-    alt: 二公司
+    src: /hero-image.png
+    alt: 建筑、路桥、风电
   actions:
     - theme: brand
       text: 财务资金制度
