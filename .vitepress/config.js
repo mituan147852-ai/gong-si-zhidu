@@ -9,8 +9,8 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '财务资金制度', link: '/finance/' },
-      { text: '商务制度', link: '/business/' },
-      { text: '项目管理部制度', link: '/project/' },
+      { text: '商务物资制度', link: '/business/' },
+      { text: '履约管理制度', link: '/project/' },
       { text: '关于', link: '/about' }
     ],
 
