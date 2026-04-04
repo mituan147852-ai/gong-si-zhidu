@@ -30,7 +30,3 @@ features:
     title: 项目管理制度
     details: 前期手续、项目实施、竣工保修，共19个制度文档
 ---
-
-<div class="home-footer">
-内部资料 · 仅供公司内部学习参考使用
-</div>
