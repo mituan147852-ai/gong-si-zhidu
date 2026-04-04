@@ -123,6 +123,17 @@
   margin-top: 24px;
 }
 
+/* 制度列表链接样式 */
+.vp-doc .vp-content a {
+  color: #1a1a2e !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+
+.vp-doc .vp-content a:hover {
+  color: #3b82f6 !important;
+}
+
 /* 响应式优化 */
 @media (max-width: 768px) {
   .VPHome .VPHero .container {
