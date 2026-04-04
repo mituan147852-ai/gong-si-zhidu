@@ -10,7 +10,8 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '财务资金制度', link: '/finance/' },
       { text: '商务制度', link: '/business/' },
-      { text: '项目管理部制度', link: '/project/' }
+      { text: '项目管理部制度', link: '/project/' },
+      { text: '关于', link: '/about' }
     ],
 
     sidebar: {
