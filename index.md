@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "制度库"
  
-  tagline: "制度宣贯 · 做什么 · 怎么做 · 啥时做 · 咋考核"
+  tagline: "制度宣贯<br>做什么 · 怎么做 · 啥时做 · 咋考核"
   actions:
     - theme: brand
       text: "财务资金制度"
