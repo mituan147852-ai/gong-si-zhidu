@@ -123,14 +123,28 @@
   margin-top: 24px;
 }
 
-/* 制度列表链接样式 */
-.vp-doc .vp-content a {
+/* 制度列表链接样式 - 去掉下划线和蓝色 */
+.vp-doc a,
+.vp-doc a:link,
+.vp-doc a:visited,
+.vp-doc a:active {
   color: #1a1a2e !important;
   text-decoration: none !important;
-  transition: color 0.2s ease;
 }
 
-.vp-doc .vp-content a:hover {
+.vp-doc a:hover {
+  color: #3b82f6 !important;
+}
+
+/* 导航和侧边栏链接 */
+.VPNav a,
+.VPSidebar a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.VPNav a:hover,
+.VPSidebar a:hover {
   color: #3b82f6 !important;
 }
 
