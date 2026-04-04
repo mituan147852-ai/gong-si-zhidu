@@ -4,15 +4,15 @@ layout: home
 hero:
   name: "制度库"
   text: "中建市政工程有限公司"
-  tagline: "制度宣贯 · 做什么 · 怎么做 · 什么时候做 · 怎么考核"
+  tagline: "制度宣贯 · 做什么 · 怎么做 · 啥时做 · 咋考核"
   actions:
     - theme: brand
       text: "财务资金制度"
       link: /finance/
     - theme: alt
-      text: "商务制度"
+      text: "商务物资制度"
       link: /business/
     - theme: alt
-      text: "项目管理部制度"
+      text: "履约管理制度"
       link: /project/
 ---
