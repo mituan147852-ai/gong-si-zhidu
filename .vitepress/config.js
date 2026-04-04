@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: '制度库',
-  description: '中建一局集团第二建筑有限公司制度宣贯平台',
+  description: '中建市政工程有限公司制度宣贯平台',
   ignoreDeadLinks: true,
 
   themeConfig: {
@@ -89,8 +89,8 @@ export default defineConfig({
     },
 
     footer: {
-      message: '中建一局集团第二建筑有限公司',
-      copyright: 'Copyright © 2024-2025'
+      message: '中建市政工程有限公司',
+      copyright: 'Copyright © 2024-2026'
     }
   }
 })
