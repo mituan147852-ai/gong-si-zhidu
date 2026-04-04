@@ -89,7 +89,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: '中建市政工程有限公司',
+      message: '中建市政工程有限公司','商务专家'
       copyright: 'Copyright © 2024-2026'
     }
   }
