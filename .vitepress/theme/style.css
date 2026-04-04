@@ -30,6 +30,18 @@
   max-width: 480px;    /* 最大宽度480像素，避免太长 */
 }
 
+/* 三个按钮：全部蓝色背景，白色文字 */
+.VPHero .actions .VPButton {
+  background: #3b82f6 !important;       /* 蓝色背景 */
+  border-color: #3b82f6 !important;    /* 蓝色边框 */
+  color: #fff !important;               /* 白色文字 */
+}
+
+.VPHero .actions .VPButton:hover {
+  background: #2563eb !important;       /* 悬停时更深蓝色 */
+  border-color: #2563eb !important;
+}
+
 /* 底部提示区域 */
 .home-footer {
   color: #9ca3af;     /* 更浅的灰色文字 */
@@ -109,6 +121,6 @@
     border-color: #3b82f6 !important; /* 蓝色边框 */
     color: #fff !important;         /* 白色文字 */
     text-align: center;             /* 文字居中 */
-    width: 100%;                    /* 宽度100% */
+    width: 60%;                    /* 宽度60% */
   }
 }
