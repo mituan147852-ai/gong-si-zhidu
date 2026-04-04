@@ -11,7 +11,7 @@
 
 /* Hero 区域 */
 .VPHero {
-  padding: 120px 0 60px !important;
+  padding: 120px 0 40px !important;
   max-width: 100% !important;
 }
 
@@ -113,7 +113,7 @@
 
 /* 功能卡片区域 */
 .VPFeatures {
-  padding: 32px 0 16px !important;
+  padding: 24px 0 8px !important;
   border-top: 1px solid #f0f0f0 !important;
 }
 
@@ -156,7 +156,7 @@
 /* 底部提示 */
 .home-footer {
   text-align: center !important;
-  padding: 16px 0 24px !important;
+  padding: 8px 0 16px !important;
   color: #9ca3af !important;
   font-size: 12px !important;
   border-top: 1px solid #f0f0f0 !important;
