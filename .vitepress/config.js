@@ -88,6 +88,9 @@ export default defineConfig({
       provider: 'local'
     },
 
-    footer: false
+    footer: {
+      message: '中建市政工程有限公司 商务专家',
+      copyright: 'Copyright © 2024-2026'
+    }
   }
 })
