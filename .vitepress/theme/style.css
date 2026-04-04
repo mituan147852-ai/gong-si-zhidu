@@ -1,223 +1,117 @@
 /* ============================================
-   VitePress 官方风格 - 简洁设计
+   简洁定制样式
    ============================================ */
 
 /* 首页整体布局 */
 .VPHome {
-  padding: 0 24px;
   max-width: 1152px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
-/* Hero 区域 */
-.VPHero {
-  padding: 120px 0 40px !important;
-  max-width: 100% !important;
-  overflow: hidden !important;
-}
-
-.VPHero .container {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 64px !important;
-  max-width: 960px !important;
-  margin: 0 auto !important;
-}
-
-.VPHero .main {
-  flex: 1 !important;
-  text-align: left !important;
-}
-
-/* 标题 */
+/* Hero 区域：标题样式 */
 .VPHero .name {
-  font-size: 3rem !important;
-  font-weight: 700 !important;
   color: #1a1a2e !important;
-  letter-spacing: -0.02em !important;
-  line-height: 1.1 !important;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
-/* 副标题 */
+/* Hero 区域：副标题 */
 .VPHero .text {
-  font-size: 1.25rem !important;
-  color: #4a4a4a !important;
-  font-weight: 500 !important;
-  margin-top: 12px !important;
+  color: #4a4a4a;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
-/* 描述语 */
+/* Hero 区域：描述语 */
 .VPHero .tagline {
-  font-size: 1rem !important;
-  color: #6b7280 !important;
-  margin-top: 16px !important;
-  line-height: 1.6 !important;
-  max-width: 480px !important;
-}
-
-/* 按钮 */
-.VPHero .actions {
-  display: flex !important;
-  gap: 12px !important;
-  margin-top: 32px !important;
-}
-
-.VPHero .actions .VPButton {
-  padding: 12px 20px !important;
-  font-size: 14px !important;
-  border-radius: 6px !important;
-  font-weight: 500 !important;
-  transition: all 0.2s ease !important;
-}
-
-/* 主题按钮（蓝色） */
-.VPHero .actions .VPButton.brand {
-  background: #3b82f6 !important;
-  border-color: #3b82f6 !important;
-  color: #fff !important;
-}
-
-.VPHero .actions .VPButton.brand:hover {
-  background: #2563eb !important;
-  border-color: #2563eb !important;
-}
-
-/* 次要按钮（边框） */
-.VPHero .actions .VPButton.alt {
-  background: transparent !important;
-  border: 1px solid #d1d5db !important;
-  color: #374151 !important;
-}
-
-.VPHero .actions .VPButton.alt:hover {
-  border-color: #3b82f6 !important;
-  color: #3b82f6 !important;
+  color: #6b7280;
+  max-width: 480px;
 }
 
 /* 右侧图片 */
-.VPHero .image {
-  flex: 0 0 380px !important;
-}
-
 .VPHero .image-container {
-  border-radius: 8px !important;
-  overflow: hidden !important;
-  border: 1px solid #e5e7eb !important;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
 }
 
-.VPHero .image-container img {
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-}
-
-/* 功能卡片区域 */
+/* 功能卡片：去除默认样式 */
 .VPFeatures {
-  padding: 24px 0 8px !important;
-  border-top: 1px solid #f0f0f0 !important;
+  border-top: 1px solid #f0f0f0;
 }
 
 .VPFeature {
   border: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  background: transparent !important;
-  transition: none !important;
-}
-
-.VPFeature:hover {
-  transform: none !important;
   box-shadow: none !important;
-  border: none !important;
 }
 
-/* 卡片图标 */
+/* 功能卡片：图标 */
 .VPFeature .icon {
-  font-size: 2rem !important;
-  margin-bottom: 16px !important;
+  font-size: 2rem;
+  margin-bottom: 16px;
 }
 
-/* 卡片标题 */
+/* 功能卡片：标题 */
 .VPFeature .title {
-  font-size: 1.1rem !important;
-  font-weight: 600 !important;
-  color: #1a1a2e !important;
-  margin-bottom: 8px !important;
+  color: #1a1a2e;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
-/* 卡片描述 */
+/* 功能卡片：描述 */
 .VPFeature .details {
-  font-size: 0.95rem !important;
-  color: #6b7280 !important;
-  line-height: 1.6 !important;
-  margin: 0 !important;
+  color: #6b7280;
+  font-size: 0.95rem;
 }
 
 /* 底部提示 */
 .home-footer {
-  text-align: center !important;
-  padding: 4px 0 12px !important;
-  color: #9ca3af !important;
-  font-size: 12px !important;
-  border-top: 1px solid #f0f0f0 !important;
+  color: #9ca3af;
+  font-size: 12px;
+  border-top: 1px solid #f0f0f0;
+  padding: 4px 0 12px;
 }
 
-/* 链接样式 */
-.vp-doc a,
-.vp-doc a:link,
-.vp-doc a:visited,
-.vp-doc a:active {
-  color: #1a1a2e !important;
-  text-decoration: none !important;
+/* 链接：黑色无下划线 */
+.vp-doc a {
+  color: #1a1a2e;
+  text-decoration: none;
 }
 
 .vp-doc a:hover {
-  color: #3b82f6 !important;
+  color: #3b82f6;
 }
 
-/* 导航栏链接 */
+/* 导航栏和侧边栏链接 */
 .VPNav a,
 .VPSidebar a {
-  color: inherit !important;
-  text-decoration: none !important;
+  color: inherit;
+  text-decoration: none;
 }
 
 .VPNav a:hover,
 .VPSidebar a:hover {
-  color: #3b82f6 !important;
+  color: #3b82f6;
 }
 
 /* 隐藏标题旁的 # */
 .vp-doc .header-anchor {
-  display: none !important;
+  display: none;
 }
 
 /* 手机适配 */
 @media (max-width: 768px) {
   .VPHero .container {
-    flex-direction: column !important;
-    gap: 32px !important;
-    text-align: center !important;
+    flex-direction: column;
+    text-align: center;
   }
 
   .VPHero .name {
-    font-size: 2.2rem !important;
+    font-size: 2.2rem;
   }
 
   .VPHero .tagline {
-    max-width: 100% !important;
-  }
-
-  .VPHero .actions {
-    justify-content: center !important;
-    flex-wrap: wrap !important;
-  }
-
-  .VPHero .image,
-  .VPHero .image-container {
-    width: 100% !important;
-    max-width: 360px !important;
-    flex: none !important;
+    max-width: 100%;
   }
 }
