@@ -1,117 +1,132 @@
 /* ============================================
-   简洁定制样式
+   首页自定义样式
    ============================================ */
 
-/* 首页整体布局 */
+/* 首页整体布局：居中显示，左右留白 */
 .VPHome {
-  max-width: 1152px;
-  margin: 0 auto;
-  padding: 0 24px;
+  max-width: 1152px;  /* 内容最大宽度1152像素 */
+  margin: 0 auto;     /* 上下0，左右自动（居中） */
+  padding: 0 24px;    /* 左右各留24像素空白 */
 }
 
-/* Hero 区域：标题样式 */
+/* 主标题：制度库 */
 .VPHero .name {
-  color: #1a1a2e !important;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  color: #1a1a2e;     /* 深灰色文字 */
+  font-size: 3rem;     /* 字号48像素 */
+  font-weight: 700;     /* 字体加粗（700=粗体） */
+  letter-spacing: -0.02em; /* 字间距略微收紧 */
 }
 
-/* Hero 区域：副标题 */
+/* 副标题：中建市政工程有限公司 */
 .VPHero .text {
-  color: #4a4a4a;
-  font-size: 1.25rem;
-  font-weight: 500;
+  color: #4a4a4a;     /* 略浅的灰色 */
+  font-size: 1.25rem;  /* 字号20像素 */
+  font-weight: 500;     /* 字体中等粗细 */
 }
 
-/* Hero 区域：描述语 */
+/* 描述语：制度宣贯 · ... */
 .VPHero .tagline {
-  color: #6b7280;
-  max-width: 480px;
+  color: #6b7280;     /* 浅灰色 */
+  max-width: 480px;    /* 最大宽度480像素，避免太长 */
 }
 
-/* 右侧图片 */
+/* 右侧图片：圆角和边框 */
 .VPHero .image-container {
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
+  border-radius: 8px;   /* 图片圆角8像素 */
+  border: 1px solid #e5e7eb; /* 浅灰色细边框 */
 }
 
-/* 功能卡片：去除默认样式 */
+/* 功能卡片区域：顶部加一条分割线 */
 .VPFeatures {
-  border-top: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0; /* 浅灰色分割线 */
 }
 
+/* 功能卡片：去除默认边框和阴影 */
 .VPFeature {
-  border: none !important;
-  box-shadow: none !important;
+  border: none !important;   /* 不要边框 */
+  box-shadow: none !important; /* 不要阴影 */
 }
 
-/* 功能卡片：图标 */
+/* 功能卡片：图标大小 */
 .VPFeature .icon {
-  font-size: 2rem;
-  margin-bottom: 16px;
+  font-size: 2rem;     /* 图标2倍字大小 */
+  margin-bottom: 16px;   /* 图标下方留16像素空白 */
 }
 
-/* 功能卡片：标题 */
+/* 功能卡片：标题文字 */
 .VPFeature .title {
-  color: #1a1a2e;
-  font-weight: 600;
-  margin-bottom: 8px;
+  color: #1a1a2e;     /* 深灰色 */
+  font-weight: 600;     /* 中粗体 */
+  margin-bottom: 8px;   /* 标题下方留8像素空白 */
 }
 
-/* 功能卡片：描述 */
+/* 功能卡片：描述文字 */
 .VPFeature .details {
-  color: #6b7280;
-  font-size: 0.95rem;
+  color: #6b7280;     /* 浅灰色 */
+  font-size: 0.95rem;   /* 字号约15像素 */
 }
 
-/* 底部提示 */
+/* 底部提示区域 */
 .home-footer {
-  color: #9ca3af;
-  font-size: 12px;
-  border-top: 1px solid #f0f0f0;
-  padding: 4px 0 12px;
+  color: #9ca3af;     /* 更浅的灰色文字 */
+  font-size: 12px;      /* 字号12像素（小字） */
+  border-top: 1px solid #f0f0f0; /* 顶部浅灰分割线 */
+  padding: 4px 0 12px; /* 上4px下12px，左右0 */
 }
 
-/* 链接：黑色无下划线 */
+/* 正文链接：黑色无下划线 */
 .vp-doc a {
-  color: #1a1a2e;
-  text-decoration: none;
+  color: #1a1a2e;       /* 深灰色链接文字 */
+  text-decoration: none; /* 不要下划线 */
 }
 
+/* 正文链接：悬停时变蓝色 */
 .vp-doc a:hover {
-  color: #3b82f6;
+  color: #3b82f6;     /* 悬停变蓝色 */
 }
 
-/* 导航栏和侧边栏链接 */
-.VPNav a,
+/* 顶部导航栏链接：无下划线 */
+.VPNav a {
+  color: inherit;       /* 继承父元素颜色 */
+  text-decoration: none; /* 不要下划线 */
+}
+
+/* 顶部导航栏链接：悬停变蓝色 */
+.VPNav a:hover {
+  color: #3b82f6;     /* 悬停变蓝色 */
+}
+
+/* 左侧侧边栏链接：无下划线 */
 .VPSidebar a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit;       /* 继承父元素颜色 */
+  text-decoration: none; /* 不要下划线 */
 }
 
-.VPNav a:hover,
+/* 左侧侧边栏链接：悬停变蓝色 */
 .VPSidebar a:hover {
-  color: #3b82f6;
+  color: #3b82f6;     /* 悬停变蓝色 */
 }
 
-/* 隐藏标题旁的 # */
+/* 文章标题旁边的 # 链接符号：隐藏 */
 .vp-doc .header-anchor {
-  display: none;
+  display: none;         /* 不显示 */
 }
 
-/* 手机适配 */
+/* 手机适配：当屏幕宽度小于768px时 */
 @media (max-width: 768px) {
+  /* Hero区域：变成上下排列（图片在上） */
   .VPHero .container {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: column; /* 改为纵向排列 */
+    text-align: center;     /* 文字居中 */
   }
 
+  /* 主标题：在手机上缩小 */
   .VPHero .name {
-    font-size: 2.2rem;
+    font-size: 2.2rem; /* 字号从48px缩小到35px */
   }
 
+  /* 描述语：不再限制宽度 */
   .VPHero .tagline {
-    max-width: 100%;
+    max-width: 100%; /* 宽度占满 */
   }
 }
