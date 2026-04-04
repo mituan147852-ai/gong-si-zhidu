@@ -1,6 +1,11 @@
 <template>
-  <!-- 登录页：独立布局 -->
-  <div v-if="isLoginPage" class="login-page">
+  <!-- 加载状态：白屏，无闪烁 -->
+  <div v-if="checking" class="checking-page">
+    <div class="checking-text">加载中...</div>
+  </div>
+
+  <!-- 未登录：显示登录表单 -->
+  <div v-else-if="!isLoggedIn" class="login-page">
     <div class="login-card">
       <div class="login-title">📋 制度库登录</div>
       <div class="login-subtitle">请输入账号信息访问制度库</div>
@@ -13,69 +18,50 @@
           <label>密码</label>
           <input type="password" id="login-password" placeholder="请输入密码" required />
         </div>
-        <div id="login-error" style="display:none;color:#dc2626;font-size:13px;text-align:center;padding:8px;background:#fef2f2;border-radius:6px;"></div>
+        <div id="login-error" class="login-error" style="display:none;"></div>
         <button type="submit" class="login-btn" id="login-btn">登录</button>
       </form>
       <div class="login-info">内部资料 · 仅供授权人员使用</div>
     </div>
   </div>
 
-  <!-- 其他页面：默认主题 + 认证检查 -->
-  <DefaultTheme v-else>
-    <template #home-hero-after>
-      <div id="auth-status"></div>
-    </template>
-  </DefaultTheme>
+  <!-- 已登录：正常显示页面内容 -->
+  <Content v-else />
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { useRouter, useData } from 'vitepress/client'
-import DefaultTheme from 'vitepress/theme'
+import { ref, onMounted } from 'vue'
+import { useRouter } from 'vitepress/client'
+import { Content } from 'vitepress/theme'
 import { supabase } from '../../supabase.js'
 import './login.css'
 
 const router = useRouter()
-const { page } = useData()
-
-const isLoginPage = computed(() => page.value.frontmatter.layout === 'login')
+const checking = ref(true)
+const isLoggedIn = ref(false)
+const userEmail = ref('')
 
 onMounted(async () => {
-  // 登录页不做认证检查
-  if (isLoginPage.value) {
-    // 检查是否已登录，已登录则跳转首页
-    const { data: { session } } = await supabase.auth.getSession()
-    if (session) {
-      window.location.href = '/'
-      return
-    }
-    // 初始化登录表单
-    initLoginForm()
-    return
-  }
-
-  // 非登录页：检查认证
   const { data: { session } } = await supabase.auth.getSession()
-  if (!session) {
-    window.location.href = '/login'
-    return
+
+  if (session) {
+    isLoggedIn.value = true
+    userEmail.value = session.user.email
   }
 
-  // 显示已登录状态
-  const authStatus = document.getElementById('auth-status')
-  if (authStatus) {
-    authStatus.innerHTML = `
-      <div style="text-align:center;padding:12px;color:#666;font-size:13px;border-top:1px solid #eee;margin-top:16px;">
-        已登录：${session.user.email}
-        <button id="logout-btn" style="margin-left:12px;padding:4px 12px;background:#f3f4f6;border:1px solid #d1d5db;border-radius:4px;cursor:pointer;">退出</button>
-      </div>
-    `
-    document.getElementById('logout-btn')?.addEventListener('click', async () => {
-      await supabase.auth.signOut()
-      window.location.href = '/login'
-    })
+  checking.value = false
+
+  if (!session) {
+    initLoginForm()
   }
 })
+
+async function logout() {
+  await supabase.auth.signOut()
+  isLoggedIn.value = false
+  userEmail.value = ''
+  window.location.reload()
+}
 
 function initLoginForm() {
   setTimeout(() => {
@@ -104,7 +90,7 @@ function initLoginForm() {
         btn.disabled = false
         btn.textContent = '登录'
       } else {
-        window.location.href = '/'
+        window.location.reload()
       }
     })
   }, 100)
