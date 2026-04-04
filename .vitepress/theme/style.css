@@ -148,6 +148,18 @@
   color: #3b82f6 !important;
 }
 
+/* 去掉标题旁边的 # 符号 */
+.vp-doc .header-anchor,
+.vp-doc h1 .header-anchor,
+.vp-doc h2 .header-anchor,
+.vp-doc h3 .header-anchor,
+.vp-doc h4 .header-anchor,
+.vp-doc h5 .header-anchor,
+.vp-doc h6 .header-anchor {
+  display: none !important;
+  opacity: 0 !important;
+}
+
 /* 响应式优化 */
 @media (max-width: 768px) {
   .VPHome .VPHero .container {
