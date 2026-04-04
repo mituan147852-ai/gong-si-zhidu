@@ -11,6 +11,7 @@ export default defineConfig({
       { text: '财务资金制度', link: '/finance/' },
       { text: '商务物资制度', link: '/business/' },
       { text: '履约管理制度', link: '/project/' },
+      { text: '审计相关资料', link: '/audit/' },
       { text: '关于', link: '/about' }
     ],
 
@@ -79,6 +80,15 @@ export default defineConfig({
             { text: '临时设施管理', link: '/project/临时设施管理实施细则' },
             { text: '精益建造管理', link: '/project/精益建造管理实施细则' },
             { text: '项目工期管理', link: '/project/项目工期管理实施细则' }
+          ]
+        }
+      ],
+      '/audit/': [
+        {
+          text: '审计相关资料',
+          collapsed: false,
+          items: [
+            { text: '工作内容与附表对应映射表', link: '/audit/工作内容与附表对应映射表' }
           ]
         }
       ]
