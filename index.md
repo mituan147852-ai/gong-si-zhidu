@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "制度库"
-  text: "中建一局集团第二建筑有限公司"
+  text: "中建市政工程有限公司"
   tagline: "制度宣贯 · 做什么 · 怎么做 · 什么时候做 · 怎么考核"
   image:
     src: /hero-image.png
