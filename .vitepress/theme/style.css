@@ -78,16 +78,11 @@
 
 /* 手机适配：当屏幕宽度小于768px时 */
 @media (max-width: 768px) {
-  /* Hero区域整体居中 */
-  .VPHero {
-    text-align: center;     /* 内容居中 */
-  }
-
-  /* Hero容器：上下排列 */
+  /* Hero容器：上下排列，靠左对齐 */
   .VPHero .container {
-    flex-direction: column; /* 改为纵向排列 */
-    text-align: center;     /* 文字居中 */
-    align-items: center;    /* 子元素居中对齐 */
+    flex-direction: column;     /* 改为纵向排列 */
+    text-align: left;           /* 文字靠左 */
+    align-items: flex-start;   /* 子元素靠左对齐 */
   }
 
   /* 主标题：在手机上缩小 */
@@ -95,15 +90,25 @@
     font-size: 2.2rem; /* 字号从48px缩小到35px */
   }
 
-  /* 副标题和描述语：居中 */
+  /* 副标题和描述语：靠左对齐 */
   .VPHero .text,
   .VPHero .tagline {
-    margin-left: auto;   /* 左右自动 */
-    margin-right: auto;
+    text-align: left; /* 文字靠左 */
   }
 
-  /* 按钮：居中显示 */
+  /* 三个按钮：全部变成蓝色，竖向排列，靠左 */
   .VPHero .actions {
-    justify-content: center; /* 按钮居中 */
+    flex-direction: column;      /* 按钮竖向排列 */
+    align-items: stretch;        /* 按钮宽度撑满 */
+    gap: 8px;                   /* 按钮间距8px */
+  }
+
+  /* 所有按钮：蓝色背景，白色文字 */
+  .VPHero .actions .VPButton {
+    background: #3b82f6 !important; /* 蓝色背景 */
+    border-color: #3b82f6 !important; /* 蓝色边框 */
+    color: #fff !important;         /* 白色文字 */
+    text-align: center;             /* 文字居中 */
+    width: 100%;                    /* 宽度100% */
   }
 }
