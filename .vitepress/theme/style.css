@@ -36,36 +36,6 @@
   border: 1px solid #e5e7eb; /* 浅灰色细边框 */
 }
 
-/* 功能卡片区域：顶部加一条分割线 */
-.VPFeatures {
-  border-top: 1px solid #f0f0f0; /* 浅灰色分割线 */
-}
-
-/* 功能卡片：去除默认边框和阴影 */
-.VPFeature {
-  border: none !important;   /* 不要边框 */
-  box-shadow: none !important; /* 不要阴影 */
-}
-
-/* 功能卡片：图标大小 */
-.VPFeature .icon {
-  font-size: 2rem;     /* 图标2倍字大小 */
-  margin-bottom: 16px;   /* 图标下方留16像素空白 */
-}
-
-/* 功能卡片：标题文字 */
-.VPFeature .title {
-  color: #1a1a2e;     /* 深灰色 */
-  font-weight: 600;     /* 中粗体 */
-  margin-bottom: 8px;   /* 标题下方留8像素空白 */
-}
-
-/* 功能卡片：描述文字 */
-.VPFeature .details {
-  color: #6b7280;     /* 浅灰色 */
-  font-size: 0.95rem;   /* 字号约15像素 */
-}
-
 /* 底部提示区域 */
 .home-footer {
   color: #9ca3af;     /* 更浅的灰色文字 */
