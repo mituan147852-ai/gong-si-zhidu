@@ -78,10 +78,16 @@
 
 /* 手机适配：当屏幕宽度小于768px时 */
 @media (max-width: 768px) {
-  /* Hero区域：变成上下排列（图片在上） */
+  /* Hero区域整体居中 */
+  .VPHero {
+    text-align: center;     /* 内容居中 */
+  }
+
+  /* Hero容器：上下排列 */
   .VPHero .container {
     flex-direction: column; /* 改为纵向排列 */
     text-align: center;     /* 文字居中 */
+    align-items: center;    /* 子元素居中对齐 */
   }
 
   /* 主标题：在手机上缩小 */
@@ -89,8 +95,15 @@
     font-size: 2.2rem; /* 字号从48px缩小到35px */
   }
 
-  /* 描述语：不再限制宽度 */
+  /* 副标题和描述语：居中 */
+  .VPHero .text,
   .VPHero .tagline {
-    max-width: 100%; /* 宽度占满 */
+    margin-left: auto;   /* 左右自动 */
+    margin-right: auto;
+  }
+
+  /* 按钮：居中显示 */
+  .VPHero .actions {
+    justify-content: center; /* 按钮居中 */
   }
 }
