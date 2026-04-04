@@ -15,4 +15,7 @@ hero:
     - theme: brand
       text: "履约管理制度"
       link: /project/
+    - theme: brand
+      text: "审计相关资料"
+      link: /audit/
 ---
