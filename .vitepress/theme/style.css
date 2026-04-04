@@ -1,129 +1,139 @@
-/* 首页整体布局优化 */
+/* 首页整体居中 */
 .VPHome {
   padding: 0 24px;
-}
-
-/* Hero 区域优化 */
-.VPHome .VPHero {
-  padding: 48px 0 32px;
-}
-
-.VPHome .VPHero .container {
-  max-width: 1152px;
+  max-width: 1280px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 64px;
 }
 
-.VPHome .VPHero .main {
-  flex: 1;
+/* Hero 区域：左右两栏布局 */
+.VPHero {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 48px !important;
+  padding: 48px 0 !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
-.VPHome .VPHero .name {
-  font-size: 3rem !important;
+/* 左侧文字区域 */
+.VPHero .container .main {
+  flex: 1 !important;
+  max-width: 600px !important;
+}
+
+/* 标题 "制度库" */
+.VPHero .name {
+  font-size: 3.2rem !important;
   font-weight: 800 !important;
   background: linear-gradient(135deg, #1a1a2e 0%, #3b82f6 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;
+  margin-bottom: 8px !important;
 }
 
-.VPHome .VPHero .text {
+/* 副标题 */
+.VPHero .text {
   font-size: 1.5rem !important;
   color: #374151 !important;
-  margin-top: 8px !important;
+  font-weight: 500 !important;
 }
 
-.VPHome .VPHero .tagline {
+/* 描述语 */
+.VPHero .tagline {
   font-size: 1.1rem !important;
   color: #6b7280 !important;
   margin-top: 16px !important;
-  line-height: 1.6 !important;
+  line-height: 1.8 !important;
 }
 
-.VPHome .VPHero .actions {
-  margin-top: 32px !important;
+/* 三个按钮 */
+.VPHero .actions {
   display: flex !important;
   gap: 12px !important;
+  margin-top: 32px !important;
   flex-wrap: wrap !important;
 }
 
-.VPHome .VPHero .actions .VPButton {
+.VPHero .actions .VPButton {
   padding: 12px 24px !important;
   font-size: 15px !important;
   border-radius: 8px !important;
+  font-weight: 500 !important;
 }
 
-/* 右侧图片优化 */
-.VPHome .VPHero .image {
-  flex: 0 0 400px;
+/* 右侧图片区域 */
+.VPHero .image {
+  flex: 0 0 auto !important;
+  width: 420px !important;
 }
 
-.VPHome .VPHero .image-container {
+.VPHero .image-container {
   border-radius: 16px !important;
   overflow: hidden !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12) !important;
+  width: 420px !important;
+  height: auto !important;
 }
 
-.VPHome .VPHero .image-container img {
-  width: 100%;
-  height: auto;
-  display: block;
+.VPHero .image-container img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
 }
 
-/* 功能介绍区域 */
-.VPHome .VPFeatures {
-  padding: 48px 0;
+/* 功能卡片区域 */
+.VPFeatures {
+  padding: 48px 0 !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
-.VPHome .VPFeatures .container {
-  max-width: 1152px;
-  margin: 0 auto;
-}
-
-.VPHome .VPFeature {
+.VPFeature {
   border: 1px solid #e5e7eb !important;
   border-radius: 12px !important;
   padding: 24px !important;
   transition: all 0.3s ease !important;
+  background: #fff !important;
 }
 
-.VPHome .VPFeature:hover {
+.VPFeature:hover {
   border-color: #3b82f6 !important;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15) !important;
-  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15) !important;
+  transform: translateY(-4px) !important;
 }
 
-.VPHome .VPFeature .icon {
-  font-size: 2rem !important;
+.VPFeature .icon {
+  font-size: 2.2rem !important;
   margin-bottom: 12px !important;
 }
 
-.VPHome .VPFeature .title {
+.VPFeature .title {
   font-size: 1.1rem !important;
   font-weight: 600 !important;
   color: #1a1a2e !important;
 }
 
-.VPHome .VPFeature .details {
-  font-size: 0.9rem !important;
+.VPFeature .details {
+  font-size: 0.95rem !important;
   color: #6b7280 !important;
   margin-top: 8px !important;
-  line-height: 1.5 !important;
+  line-height: 1.6 !important;
 }
 
 /* 底部提示 */
 .home-footer {
-  text-align: center;
-  padding: 24px 0 32px;
-  color: #9ca3af;
-  font-size: 13px;
-  border-top: 1px solid #f3f4f6;
-  margin-top: 24px;
+  text-align: center !important;
+  padding: 24px 0 32px !important;
+  color: #9ca3af !important;
+  font-size: 13px !important;
+  border-top: 1px solid #f3f4f6 !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
 }
 
-/* 制度列表链接样式 - 去掉下划线和蓝色 */
+/* 链接样式：黑色无下划线 */
 .vp-doc a,
 .vp-doc a:link,
 .vp-doc a:visited,
@@ -136,7 +146,7 @@
   color: #3b82f6 !important;
 }
 
-/* 导航和侧边栏链接 */
+/* 导航栏和侧边栏链接 */
 .VPNav a,
 .VPSidebar a {
   color: inherit !important;
@@ -148,37 +158,36 @@
   color: #3b82f6 !important;
 }
 
-/* 去掉标题旁边的 # 符号 */
-.vp-doc .header-anchor,
-.vp-doc h1 .header-anchor,
-.vp-doc h2 .header-anchor,
-.vp-doc h3 .header-anchor,
-.vp-doc h4 .header-anchor,
-.vp-doc h5 .header-anchor,
-.vp-doc h6 .header-anchor {
+/* 隐藏标题旁的 # 符号 */
+.vp-doc .header-anchor {
   display: none !important;
   opacity: 0 !important;
 }
 
-/* 响应式优化 */
-@media (max-width: 768px) {
-  .VPHome .VPHero .container {
-    flex-direction: column-reverse;
-    text-align: center;
-    gap: 32px;
+/* 手机适配 */
+@media (max-width: 900px) {
+  .VPHero {
+    flex-direction: column-reverse !important;
+    text-align: center !important;
+    gap: 32px !important;
+    padding: 32px 0 !important;
   }
 
-  .VPHome .VPHero .actions {
-    justify-content: center;
+  .VPHero .container .main {
+    max-width: 100% !important;
   }
 
-  .VPHome .VPHero .image {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 400px;
+  .VPHero .name {
+    font-size: 2.4rem !important;
   }
 
-  .VPHome .VPHero .name {
-    font-size: 2.2rem !important;
+  .VPHero .actions {
+    justify-content: center !important;
+  }
+
+  .VPHero .image,
+  .VPHero .image-container {
+    width: 100% !important;
+    max-width: 400px !important;
   }
 }
