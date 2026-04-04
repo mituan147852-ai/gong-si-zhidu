@@ -18,16 +18,7 @@ hero:
     - theme: brand
       text: "项目管理部制度"
       link: /project/
-features:
-  - icon: 💰
-    title: 财务资金制度
-    details: 资金管理、费用管理、资产管理等
-  - icon: 📋
-    title: 商务制度
-    details: 目标考核、成本管理、供方管理等
-  - icon: 📁
-    title: 项目管理制度
-    details: 前期手续、项目实施、竣工保修等
+
 ---
 
 <div class="home-footer">
