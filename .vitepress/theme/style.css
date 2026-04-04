@@ -30,12 +30,6 @@
   max-width: 480px;    /* 最大宽度480像素，避免太长 */
 }
 
-/* 右侧图片：圆角和边框 */
-.VPHero .image-container {
-  border-radius: 8px;   /* 图片圆角8像素 */
-  border: 1px solid #e5e7eb; /* 浅灰色细边框 */
-}
-
 /* 底部提示区域 */
 .home-footer {
   color: #9ca3af;     /* 更浅的灰色文字 */
