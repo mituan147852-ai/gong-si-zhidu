@@ -12,6 +12,7 @@ export default defineConfig({
       { text: '商务物资制度', link: '/business/' },
       { text: '履约管理制度', link: '/project/' },
       { text: '审计相关资料', link: '/audit/' },
+      { text: '独库公路图纸', link: '/独库公路图纸/' },
       { text: '关于', link: '/about' }
     ],
 
@@ -88,8 +89,16 @@ export default defineConfig({
           text: '审计相关资料',
           collapsed: false,
           items: [
-            { text: '工作内容与附表对应映射表', link: '/audit/工作内容与附表对应映射表' },
-            { text: '独库隧道通用图结构手册', link: '/audit/独库隧道通用图结构手册' }
+            { text: '工作内容与附表对应映射表', link: '/audit/工作内容与附表对应映射表' }
+          ]
+        }
+      ],
+      '/独库公路图纸/': [
+        {
+          text: '独库公路图纸',
+          collapsed: false,
+          items: [
+            { text: '独库隧道通用图结构手册', link: '/独库公路图纸/独库隧道通用图结构手册' }
           ]
         }
       ]
