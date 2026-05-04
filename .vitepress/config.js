@@ -88,7 +88,8 @@ export default defineConfig({
           text: '审计相关资料',
           collapsed: false,
           items: [
-            { text: '工作内容与附表对应映射表', link: '/audit/工作内容与附表对应映射表' }
+            { text: '工作内容与附表对应映射表', link: '/audit/工作内容与附表对应映射表' },
+            { text: '独库隧道通用图结构手册', link: '/audit/独库隧道通用图结构手册' }
           ]
         }
       ]
